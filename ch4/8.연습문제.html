@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8.연습문제</title>
+    <!-- 
+        날짜 : 2024/07/25 (목)
+        이름 : 김민희
+        내용 : css 속성 연습문제 실습하기
+    -->
+    <style>
+        article {display: inline-block;}
+        article > div {width: 300px; height: 300px; border: 1px dashed black ;}
+
+        /* 문제1 */
+        .box1{position: relative;}
+        .box1 > div {width: 200px; height: 200px; background: green;
+                position: absolute; right:0;}
+
+        /* 문제2 */
+        .box2 {position: relative;}
+        .box2 > div {position: absolute; right:0; bottom:0;
+            width: 200px; height: 200px; background: green;}
+
+        /* 문제3 */
+        .box3 {position: relative;}
+        .box3 > div {position: absolute; right:0;
+            width: 200px; height: 200px; background: green;}
+        .box3 > p {position: absolute; right:0; bottom: 84px;
+            width:100px; height: 100px; background: blue;}
+        
+        /* 문제4 */
+        .box4 {position: relative;}
+        .box4 > div {position: absolute; left: 0; bottom: 0;
+            width: 200px; height: 200px; background: green;}
+        .box4 > div > p {position: absolute; bottom:-16px;
+            width:100px; height: 100px; background: blue;}
+
+        /* 문제5 */
+        .box5 {position: relative;}
+        .box5 > div {position: relative; margin:0 auto;
+            width: 200px; height: 200px; background: green;}
+        .box5 > div > div {position: absolute; left: 50%; 
+            margin-left: -50px; top:50%; margin-top:-50px;
+            width: 100px; height: 100px; background:blue; }
+
+        /* 문제6 */
+        .box6 {}
+        .box6 > div {}
+        .box6 > div > div {}
+
+        /* 문제7 */
+        .box7 {}
+        .box7 > div{float:left; width: 100px; height: 100px; overflow: hidden;}
+        .box7 > div:nth-child(2) {background: red;}
+        .box7 > div:nth-child(4) {background: green;}
+        .box7 > div:nth-child(6) {background: blue;}
+        .box7 > div:nth-child(8) {background: orange;}
+
+        /* 문제8 */
+        .box8 {}
+        .box8 > div{float:left; width: 100px; height: 100px; overflow: hidden;}
+        .box8 > div:nth-child(1) {background: red;}
+        .box8 > div:nth-child(3) {background:green;}
+        .box8 > div:nth-child(5) {background:orange;}
+        .box8 > div:nth-child(7) {background:pink;}
+        .box8 > div:nth-child(9) {background:blue;}
+
+        /* 문제9 */
+        .box9{}
+        .box9 > div {float:left; width: 100px; height: 100px; overflow: hidden;s}
+        .box9 > div:nth-child(1) {background:red;}
+        .box9 > div:nth-child(2) {background:green;}
+        .box9 > div:nth-child(3) {background:blue;}
+        .box9 > div:nth-child(4) {background:orange;}
+        .box9 > div:nth-child(5) {background:pink;}
+        .box9 > div:nth-child(6) {clear:left; background: brown;}
+
+        /* 문제10 */
+        .box10{}
+        .box10 > div {float:right; width: 100px; height: 100px; overflow: hidden;}
+        .box10 > div:nth-child(1) {background:red;}
+        .box10 > div:nth-child(2) {background:green; clear:right;}
+        .box10 > div:nth-child(3) {background:blue;}
+        .box10 > div:nth-child(4) {background:orange; clear:right;}
+        .box10 > div:nth-child(5) {background:pink;}
+        .box10 > div:nth-child(6) {clear:left; background: brown;}
+
+    </style>
+</head>
+<body>
+    
+    <article>
+        <h4>문제1. 다음과 같이 배치 하시오</h4>
+        <div class="box1">
+            <div></div>
+        </div>
+    </article>
+
+    <article>
+        <h4>문제2. 다음과 같이 배치 하시오</h4>
+        <div class="box2">
+            <div></div>
+        </div>
+    </article>
+
+    <article>
+        <h4>문제3. 다음과 같이 배치 하시오</h4>
+        <div class="box3">
+            <div></div>
+            <p></p>
+        </div>
+    </article>
+
+    <article>
+        <h4>문제4. 다음과 같이 배치 하시오</h4>
+        <div class="box4">
+            <div><p></p></div>
+        </div>
+    </article>
+
+    <article>
+        <h4>문제5. 다음과 같이 배치 하시오</h4>
+        <div class="box5">
+            <div>
+                <div></div>
+            </div>
+        </div>
+    </article>
+
+    <article>
+        <h4>문제6. 다음과 같이 배치 하시오</h4>
+        <div class="box6">
+            <div><div></div></div>
+        </div>
+    </article>
+
+    <article>
+        <h4>문제7. 다음과 같이 배치 하시오</h4>
+        <div class="box7">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </article>
+
+    <article>
+        <h4>문제8. 다음과 같이 배치 하시오</h4>
+        <div class="box8">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </article>
+
+    <article>
+        <h4>문제9. 다음과 같이 배치 하시오</h4>
+        <div class="box9">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </article>
+
+    <article>
+        <h4>문제10. 다음과 같이 배치 하시오</h4>
+        <div class="box10">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </article>
+
+</body>
+</html>
