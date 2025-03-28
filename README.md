@@ -16,7 +16,7 @@
 | **foodshop** | 식품 쇼핑몰 메인 페이지 구현 | 반응형 레이아웃, 상품 그리드, 네비게이션 |
 | **real113** | 부동산 웹사이트 클론 코딩 | 디자인 모방, 레이아웃 구성, 스타일링 적용|
 
-## ✓ 개발 환경
+### ✓ 개발 환경
 <div align="left" style="white-space: nowrap;">
 <img src="https://img.shields.io/badge/HTML5-F83034?style=flat-square&logo=html5&logoColor=white" /> <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" /> <img src="https://img.shields.io/badge/Bootstrap5-7330F9?style=flat-square&logo=bootstrap&logoColor=white" /> <img src="https://img.shields.io/badge/VS_Code-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white" />
 </div>
